@@ -9,6 +9,7 @@ html, body{
     color: #444;
     width: 100%;
     
+    
 
 }
 body{
@@ -138,6 +139,7 @@ textarea{
     color: white;
     text-decoration: none;
     background-color: transparent;
+    font-weight: bold;
 }
 .hire:hover{
 
