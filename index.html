@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lora&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/codemirror.css">
+    <link rel="stylesheet" href="css/seti.css">	
+	<script src="js/codemirror/codemirror.js"></script>
+    <script src="js/codemirror/mode/python/python.js"></script>
+    <script>
+		function $Id(id) {return document.getElementById(id)};
+	</script>
+    
     <title>Meet Hilea</title>
+    <script>
+		function $Id(id) {return document.getElementById(id)};
+	</script>
 </head>
 <body>
     <header>
@@ -27,7 +38,23 @@
     </header>
     <main> 
         <div class="picdiv div1">
+            <div class="content">
+                <a href="" class="hire">Hire me Today</a>
+            </div>
 
+            <div id="textareacontainer">
+                <textarea id="textareaCode" wrap="logical" disabled>
+alive= True
+while alive:
+    try:
+        hard()
+    except Exception in life:
+        jumpOverIt()
+        tryAgain()      
+                </textarea>
+            </div>
+
+            
         </div>
         <section>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, iusto natus! Reiciendis ducimus, commodi consequuntur amet corrupti dolorum, cum veniam fugiat ex id aut dolor harum voluptatibus velit voluptates nostrum!</p>
@@ -51,6 +78,28 @@
     <footer>
 
     </footer>
+    <script>
+	
+        function colorcoding() {  
+            window.editor = CodeMirror.fromTextArea($Id("textareaCode"), {
+                
+                mode: "text/x-python",
+                lineNumbers: true,
+                lineWrapping: false,
+                smartIndent: true,
+                indentUnit: 4,
+                tabSize: 4,
+                indentWithTabs: true,
+                addModeClass: true,
+                autoCloseTags: true,
+                autoCloseBrackets: true,
+                theme: "seti"
+                
+            });
+            }
+        colorcoding();    
+        
+    </script>
     
 </body>
 </html>

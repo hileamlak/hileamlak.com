@@ -40,6 +40,7 @@ header{
 .div1{
     background-image: url("../img/image2.jpg");
     height: 100vh;
+    opacity: 0.6;
     
 }
 
@@ -48,6 +49,7 @@ header{
     min-height: 500px;
     opacity: 0.5;
 }
+
 
 .div3{
     background-image: url("../img/image1.jpg");
@@ -63,7 +65,7 @@ nav ul li{
     padding: 4px;
     margin: 2px;
     display: inline;
-    
+    text-transform: uppercase;
 }
 
 .image{
@@ -79,6 +81,68 @@ nav ul li{
 .image img{
     width: 100%;
     border-radius: 50%;
+    
+}
+.content{
+    top: 18vh;
+    width: 38vw;
+    height: 87vh;
+    background-color: rgba(234,34,89,0.3);
+    min-width: 300px;
+
+}
+
+#textareacontainer{
+    width: 38vw;
+    position: absolute;
+    left:0%;
+    /*margin-right: 5%;*/
+	top:15vh;
+	min-width: 300px;
+    
+    
+    }
+textarea{
+    overflow: hidden;
+}
+/*
+@media(max-width:1098px){
+    .code{
+        margin-right: 10%;
+    }
+}
+
+@media(max-width:872px){
+    .code{
+        margin-right: 20%;
+    }
+}
+@media(max-width:700px){
+    .code{
+        margin-right: 30%;
+    }
+}
+@media(max-width:500px){
+    .code{
+       visibility: hidden;
+    }
+}
+*/
+.hire{
+    margin-top: 73vh;
+    margin-left:2vw;
+    transition: all .1s linear;
+    border: 1px solid #e1a87a;
+    display: inline-block;
+    padding: 13px 46px;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+.hire:hover{
+
+    background-color: #e1a87a;
+    color:black;
     
 }
 
@@ -104,7 +168,7 @@ section{
 
 footer{
     width:100vw;
-    height: 10vh;
+    height: 20vh;
     position: absolute;
     
     background-color: white;
